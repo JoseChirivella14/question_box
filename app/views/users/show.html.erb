@@ -58,9 +58,11 @@
       <div class="github_repos">
         <i class="fa fa-github"></i> Github -- last 10 repos updated:
         <ul>
-          <% @user.github_repos.each do |repo| %>
-          <p><%= link_to repo[:name], repo[:html_url] %></p>
-          <p>Updated <%= repo[:updated_at] %></p>
+          <% unless @user.github_username.blank? %>
+              <% @user.github_repos.each do |repo| %>
+              <p><%= link_to repo[:name], repo[:html_url] %></p>
+              <p>Updated <%= repo[:updated_at] %></p>
+              <% end %>
           <% end %>
         </ul>
       </div>
