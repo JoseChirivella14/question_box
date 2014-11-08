@@ -31,6 +31,7 @@ class User < ActiveRecord::Base
 	end
 
 	def github_repos
+		return []
 		if !github_username.blank?
 			Github.repos.list(user: github_username, sort: updated_at, direction: 'desc', per_page: 10 ).to_a.map do |repo|
 				{name: repo[:name],
