@@ -46,5 +46,6 @@ Rails.application.configure do
   Bullet.bullet_logger = true
   Bullet.rails_logger = true
   Bullet.add_footer = true
+  Paperclip.options[:command_path] = "/usr/local/bin/"
 end
 end

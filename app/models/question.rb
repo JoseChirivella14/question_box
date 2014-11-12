@@ -3,6 +3,7 @@ class Question < ActiveRecord::Base
   has_many :answers
   has_and_belongs_to_many :tags
   has_many :votes, as: :voteable
+  has_many :image
 
   validates :title, presence: true
   validates :text, presence: true

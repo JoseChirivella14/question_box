@@ -7,6 +7,7 @@
             <%= f.input :title, label: false, placeholder: "How do I ... ?" %>
             <%= f.input :text, label: false, placeholder: "Your question text" %>
             <%= f.input :tag_list, label: false, placeholder: "tags" %>
+            <%= f.file_field :image %>
             <div class="text-center">
               <%= f.button :submit, "Ask", :class => "radius" %>
             </div>

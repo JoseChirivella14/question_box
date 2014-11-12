@@ -19,6 +19,7 @@ gem 'unicorn'
 gem 'gravtastic'
 gem "faker"
 gem 'friendly_id', '~> 5.0.0'
+gem "paperclip", "~> 4.2"
 
 # Assets
 gem "font-awesome-rails"
