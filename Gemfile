@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '1.9.3'
+
 gem 'rails', '4.1.6'
 gem 'pg'
 gem 'sass-rails', '~> 4.0.3'
@@ -36,11 +38,4 @@ group :development, :test do
   gem "email_spec"
   gem "pry-rails"
   gem "pry-rescue"
-  gem "quiet_assets"
-  gem "selenium-webdriver"
-  gem "shoulda"
-  gem "timecop"
-  gem "rubocop", require: false
-  gem "rails_best_practices", require: false
-  gem "brakeman", require: false
 end
