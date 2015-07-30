@@ -55,9 +55,6 @@ GEM
       slim (>= 1.3.6, < 3.0)
       terminal-table (~> 1.4)
     builder (3.2.2)
-    bullet (4.14.0)
-      activesupport (>= 3.0.0)
-      uniform_notifier (>= 1.6.0)
     capybara (2.4.4)
       mime-types (>= 1.16)
       nokogiri (>= 1.3.3)
@@ -66,7 +63,11 @@ GEM
       xpath (~> 2.0)
     childprocess (0.5.5)
       ffi (~> 1.0, >= 1.0.11)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
     cliver (0.3.2)
+    cocaine (0.5.4)
+      climate_control (>= 0.0.3, < 1.0)
     code_analyzer (0.4.5)
       sexp_processor
     coderay (1.1.0)
@@ -162,6 +163,11 @@ GEM
       multi_json (~> 1.3)
       multi_xml (~> 0.5)
       rack (~> 1.2)
+    paperclip (4.2.0)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.3)
+      mime-types
     parser (2.2.0.pre.5)
       ast (>= 1.1, < 3.0)
       slop (~> 3.4, >= 3.4.5)
@@ -298,7 +304,6 @@ GEM
       kgio (~> 2.6)
       rack
       raindrops (~> 0.7)
-    uniform_notifier (1.6.2)
     vcr (2.9.3)
     webmock (1.20.0)
       addressable (>= 2.3.6)
@@ -317,7 +322,6 @@ DEPENDENCIES
   binding_of_caller
   bourbon
   brakeman
-  bullet
   capybara
   coffee-rails (~> 4.0.0)
   dotenv-rails
@@ -335,6 +339,7 @@ DEPENDENCIES
   launchy
   minitest-matchers_vaccine
   neat
+  paperclip (~> 4.2)
   pg
   poltergeist
   pry-rails
@@ -343,6 +348,7 @@ DEPENDENCIES
   rails (= 4.1.6)
   rails_12factor
   rails_best_practices
+  rake
   redcarpet
   rubocop
   ruby-stackoverflow

@@ -52,7 +52,7 @@ class RegisterAndLoginTest < ActionDispatch::IntegrationTest
 
       should "be able to log out" do
         visit root_path
-        click_on "Logout"
+        click_on "Log out"
 
         assert_equal root_path, current_path
         assert page.has_content?("logged out")

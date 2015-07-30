@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.2.0'
+
 gem 'rails', '4.1.6'
 gem 'pg'
 gem 'sass-rails', '~> 4.0.3'
@@ -19,6 +21,7 @@ gem 'unicorn'
 gem 'gravtastic'
 gem "faker"
 gem 'friendly_id', '~> 5.0.0'
+gem "paperclip", "~> 4.2"
 
 # Assets
 gem "font-awesome-rails"
@@ -47,10 +50,10 @@ group :development, :test do
   gem "rubocop", require: false
   gem "rails_best_practices", require: false
   gem "brakeman", require: false
-  gem "bullet"
 end
 
 group :test do
+  gem "rake"
   gem "vcr"
   gem "webmock"
   gem 'simplecov', :require => false
