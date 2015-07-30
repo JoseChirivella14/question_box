@@ -34,7 +34,6 @@ group :development, :test do
   gem "capybara"
   gem "dotenv-rails"
   gem "email_spec"
-  gem "launchy"
   gem "pry-rails"
   gem "pry-rescue"
   gem "quiet_assets"
@@ -44,11 +43,4 @@ group :development, :test do
   gem "rubocop", require: false
   gem "rails_best_practices", require: false
   gem "brakeman", require: false
-end
-
-group :test do
-  gem "rake"
-  gem "vcr"
-  gem "webmock"
-  gem 'simplecov', :require => false
 end
