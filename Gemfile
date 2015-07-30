@@ -39,7 +39,6 @@ group :development, :test do
   gem "dotenv-rails"
   gem "email_spec"
   gem "launchy"
-  gem "minitest-matchers_vaccine"
   gem "poltergeist"
   gem "pry-rails"
   gem "pry-rescue"
