@@ -1,0 +1,177 @@
+/* line 2, /Users/jchirivella/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/neat-1.5.1/app/assets/stylesheets/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 9, /Users/jchirivella/TIY/question_box/app/assets/stylesheets/user_profile.css.scss */
+.left_footer {
+  float: left;
+  position: absolute;
+  top: 70px;
+  width: 400px;
+}
+
+/* line 14, /Users/jchirivella/TIY/question_box/app/assets/stylesheets/user_profile.css.scss */
+.left_footer ul {
+  list-style-type: none;
+}
+
+/* line 18, /Users/jchirivella/TIY/question_box/app/assets/stylesheets/user_profile.css.scss */
+.right_footer {
+  float: left;
+  position: absolute;
+  top: 50px;
+  right: 270px;
+  left: 550px;
+  margin: 24px;
+}
+/* line 22, /Users/jchirivella/TIY/question_box/app/assets/stylesheets/user_profile.css.scss */
+.right_footer .user_questions {
+  position: absolute;
+  top: 30px;
+  width: 300px;
+  height: 400px;
+}
+
+/* line 28, /Users/jchirivella/TIY/question_box/app/assets/stylesheets/user_profile.css.scss */
+.answers {
+  position: absolute;
+  top: 30px;
+  right: 230px;
+  left: 384px;
+  width: 300px;
+}
+
+/* line 32, /Users/jchirivella/TIY/question_box/app/assets/stylesheets/user_profile.css.scss */
+.github_repos {
+  position: absolute;
+  top: 380px;
+}
+
+/* line 36, /Users/jchirivella/TIY/question_box/app/assets/stylesheets/user_profile.css.scss */
+.edit_profile_button {
+  border: 1px solid #0f0f0f;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #595959;
+  color: white;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: #333333;
+  background-image: -webkit-linear-gradient(#333333, #171717);
+  background-image: linear-gradient(#333333, #171717);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #050505;
+  background-clip: padding-box;
+  border: 1px solid #110e0e;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #595959;
+  color: white;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: #333333;
+  background-image: -webkit-linear-gradient(#333333, #191515);
+  background-image: linear-gradient(#333333, #191515);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #060404;
+  background-clip: padding-box;
+}
+/* line 131, /Users/jchirivella/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-3.2.4/app/assets/stylesheets/addons/_button.scss */
+.edit_profile_button:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 #404040;
+  cursor: pointer;
+  background-color: #262626;
+  background-image: -webkit-linear-gradient(#262626, #0f0f0f);
+  background-image: linear-gradient(#262626, #0f0f0f);
+}
+/* line 148, /Users/jchirivella/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-3.2.4/app/assets/stylesheets/addons/_button.scss */
+.edit_profile_button:active:not(:disabled), .edit_profile_button:focus:not(:disabled) {
+  border: 1px solid #0f0f0f;
+  box-shadow: inset 0 0 8px 4px #080808, inset 0 0 8px 4px #080808;
+}
+/* line 131, /Users/jchirivella/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-3.2.4/app/assets/stylesheets/addons/_button.scss */
+.edit_profile_button:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 #404040;
+  cursor: pointer;
+  background-color: #262626;
+  background-image: -webkit-linear-gradient(#262626, #110e0e);
+  background-image: linear-gradient(#262626, #110e0e);
+}
+/* line 148, /Users/jchirivella/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-3.2.4/app/assets/stylesheets/addons/_button.scss */
+.edit_profile_button:active:not(:disabled), .edit_profile_button:focus:not(:disabled) {
+  border: 1px solid #110e0e;
+  box-shadow: inset 0 0 8px 4px #080707, inset 0 0 8px 4px #080707;
+}
+/* line 51, /Users/jchirivella/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-3.2.4/app/assets/stylesheets/addons/_button.scss */
+.edit_profile_button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* line 39, /Users/jchirivella/TIY/question_box/app/assets/stylesheets/user_profile.css.scss */
+.delete_profile_button {
+  border: 1px solid #0f0f0f;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #595959;
+  color: white;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: #333333;
+  background-image: -webkit-linear-gradient(#333333, #171717);
+  background-image: linear-gradient(#333333, #171717);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #050505;
+  background-clip: padding-box;
+  border: 1px solid #110e0e;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 0 0 #595959;
+  color: white;
+  display: inline-block;
+  font-size: inherit;
+  font-weight: bold;
+  background-color: #333333;
+  background-image: -webkit-linear-gradient(#333333, #191515);
+  background-image: linear-gradient(#333333, #191515);
+  padding: 7px 18px;
+  text-decoration: none;
+  text-shadow: 0 1px 0 #060404;
+  background-clip: padding-box;
+}
+/* line 131, /Users/jchirivella/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-3.2.4/app/assets/stylesheets/addons/_button.scss */
+.delete_profile_button:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 #404040;
+  cursor: pointer;
+  background-color: #262626;
+  background-image: -webkit-linear-gradient(#262626, #0f0f0f);
+  background-image: linear-gradient(#262626, #0f0f0f);
+}
+/* line 148, /Users/jchirivella/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-3.2.4/app/assets/stylesheets/addons/_button.scss */
+.delete_profile_button:active:not(:disabled), .delete_profile_button:focus:not(:disabled) {
+  border: 1px solid #0f0f0f;
+  box-shadow: inset 0 0 8px 4px #080808, inset 0 0 8px 4px #080808;
+}
+/* line 131, /Users/jchirivella/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-3.2.4/app/assets/stylesheets/addons/_button.scss */
+.delete_profile_button:hover:not(:disabled) {
+  box-shadow: inset 0 1px 0 0 #404040;
+  cursor: pointer;
+  background-color: #262626;
+  background-image: -webkit-linear-gradient(#262626, #110e0e);
+  background-image: linear-gradient(#262626, #110e0e);
+}
+/* line 148, /Users/jchirivella/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-3.2.4/app/assets/stylesheets/addons/_button.scss */
+.delete_profile_button:active:not(:disabled), .delete_profile_button:focus:not(:disabled) {
+  border: 1px solid #110e0e;
+  box-shadow: inset 0 0 8px 4px #080707, inset 0 0 8px 4px #080707;
+}
+/* line 51, /Users/jchirivella/.rbenv/versions/1.9.3-p551/lib/ruby/gems/1.9.1/gems/bourbon-3.2.4/app/assets/stylesheets/addons/_button.scss */
+.delete_profile_button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

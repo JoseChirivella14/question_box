@@ -93,9 +93,9 @@ GEM
     fastercsv (1.5.5)
     font-awesome-rails (4.4.0.0)
       railties (>= 3.2, < 5.0)
-    foundation-rails (5.5.0.0)
+    foundation-rails (5.4.5.0)
       railties (>= 3.1.0)
-      sass (>= 3.2.0, < 3.4)
+      sass (>= 3.2.0)
     friendly_id (5.0.5)
       activerecord (>= 4.0.0)
     github_api (0.12.3)
@@ -309,7 +309,7 @@ DEPENDENCIES
   email_spec
   faker
   font-awesome-rails
-  foundation-rails
+  foundation-rails (= 5.4.5)
   friendly_id (~> 5.0.0)
   github_api
   gravtastic
@@ -333,7 +333,7 @@ DEPENDENCIES
   redcarpet
   rubocop
   ruby-stackoverflow
-  sass-rails
+  sass-rails (>= 4.0.4)
   sdoc (~> 0.4.0)
   shoulda
   simple_form
