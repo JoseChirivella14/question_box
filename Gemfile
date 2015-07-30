@@ -31,13 +31,10 @@ gem 'ruby-stackoverflow'
 gem "github_api"
 
 group :development, :test do
-  gem "better_errors"
-  gem "binding_of_caller"
   gem "capybara"
   gem "dotenv-rails"
   gem "email_spec"
   gem "launchy"
-  gem "poltergeist"
   gem "pry-rails"
   gem "pry-rescue"
   gem "quiet_assets"
