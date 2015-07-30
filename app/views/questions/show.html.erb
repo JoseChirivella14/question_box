@@ -9,16 +9,12 @@
       <div>
         Asked by <%= image_tag @question.user.gravatar_url(size: 20) %> <%= link_to @question.user.name, user_path(@question.user) %>
       </div>
-      <div class="small-6 columns">
-        <%= image_tag @photo.image.url(:medium) %>
-      </div>
     </div>
     <div class="small-3 columns text-center">
       <%= vote_panel(@question) %>
     </div>
   </div>
   <hr/>
-
   <div id="bing-links" class="row">
     <div class="small-12 columns">
       <h2>Links from Bing</h2>
