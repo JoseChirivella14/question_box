@@ -43,7 +43,6 @@ group :development, :test do
   gem "pry-rails"
   gem "pry-rescue"
   gem "quiet_assets"
-  gem "selenium-webdriver"
   gem "shoulda"
   gem "timecop"
   gem "rubocop", require: false
