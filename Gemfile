@@ -1,17 +1,17 @@
 source 'https://rubygems.org'
 
-ruby '1.9.3'
+ruby '2.2.3'
 
 gem 'rails', '4.1.6'
 gem 'pg'
-gem 'sass-rails', '>=4.0.4'
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'sass-rails'
+gem 'uglifier'
+gem 'coffee-rails'
 gem 'jquery-rails'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0',          group: :doc
-gem 'spring',        group: :development
-gem 'bcrypt', '~> 3.1.7'
+gem 'jbuilder'
+gem 'sdoc', group: :doc
+gem 'spring', group: :development
+gem 'bcrypt'
 
 gem 'kaminari'
 gem 'redcarpet'
@@ -20,13 +20,13 @@ gem 'rails_12factor', group: :production
 gem 'unicorn'
 gem 'gravtastic'
 gem 'faker'
-gem 'friendly_id', '~> 5.0.0'
-gem 'paperclip', '~> 4.2'
+gem 'friendly_id'
+gem 'paperclip'
 
 # Assets
 gem 'font-awesome-rails'
 gem 'jquery-ui-rails'
-gem 'foundation-rails', '5.4.5'
+gem 'foundation-rails'
 gem 'bourbon'
 gem 'neat'
 gem 'ruby-stackoverflow'
