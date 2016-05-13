@@ -9,13 +9,13 @@ class Question < ActiveRecord::Base
   validates :text, presence: true
   validates :user, presence: true
 
-  scope :answered, -> { where("EXISTS (SELECT null FROM answers where answers.question_id = questions.id)") }
-  scope :unanswered, -> { where("NOT EXISTS (SELECT null FROM answers where answers.question_id = questions.id)") }
+  scope :answered, -> { where('EXISTS (SELECT null FROM answers where answers.question_id = questions.id)') }
+  scope :unanswered, -> { where('NOT EXISTS (SELECT null FROM answers where answers.question_id = questions.id)') }
   scope :recently_answered, -> do
-    select("questions.*, MAX(answers.created_at) AS answered_at").
-    joins("INNER JOIN answers ON answers.question_id = questions.id").
-    group("questions.id").
-    order("answered_at DESC")
+    select('questions.*, MAX(answers.created_at) AS answered_at').
+    joins('INNER JOIN answers ON answers.question_id = questions.id').
+    group('questions.id').
+    order('answered_at DESC')
   end
 
   def answered?
@@ -39,8 +39,8 @@ class Question < ActiveRecord::Base
   end
 
   def self.tag_counts
-    Tag.select("tags.*, count(questions_tags.tag_id) as count").
-        joins(:questions).group("tags.id").order("count(questions_tags.tag_id) DESC")
+    Tag.select('tags.*, count(questions_tags.tag_id) as count').
+        joins(:questions).group('tags.id').order('count(questions_tags.tag_id) DESC')
   end
 
   def tag_names
@@ -48,11 +48,11 @@ class Question < ActiveRecord::Base
   end
 
   def tag_list
-    tag_names.join(", ")
+    tag_names.join(', ')
   end
 
   def tag_list=(names)
-    self.tags = names.split(",").map do |n|
+    self.tags = names.split(',').map do |n|
       Tag.where(name: n.strip).first_or_create!
     end
   end

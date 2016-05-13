@@ -20,7 +20,7 @@ class QuestionsController < ApplicationController
     @question = current_user.questions.build(question_params)
 
     if @question.save
-      redirect_to @question, success: "Your question has been created."
+      redirect_to @question, success: 'Your question has been created.'
     else
       render :new
     end
@@ -37,16 +37,16 @@ class QuestionsController < ApplicationController
     respond_to do |format|
       format.html do
         if @vote.save
-          redirect_to @question, success: "Your vote was recorded."
+          redirect_to @question, success: 'Your vote was recorded.'
         else
-          redirect_to @question, error: "There was a problem saving your vote."
+          redirect_to @question, error: 'There was a problem saving your vote.'
         end
       end
       format.js do
         if @vote.save
-          render "votes/create", status: :created
+          render 'votes/create', status: :created
         else
-          render "votes/create", status: :accepted
+          render 'votes/create', status: :accepted
         end
       end
     end

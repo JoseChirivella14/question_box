@@ -7,7 +7,7 @@ require 'rails/test_help'
 require 'faker'
 require 'capybara/rails'
 require 'capybara/poltergeist'
-require "email_spec"
+require 'email_spec'
 require_relative 'support/test_password_helper'
 require 'pry-rescue/minitest' if ENV['DEBUG']
 
@@ -35,13 +35,13 @@ end
 
 class ActionController::TestCase
   def assert_invalid_model(model_name)
-    assert assigns[model_name], "Should have a #{model_name}"
-    assert assigns[model_name].invalid?, "Should have an invalid #{model_name}"
+    assert assigns[model_name], 'Should have a #{model_name}'
+    assert assigns[model_name].invalid?, 'Should have an invalid #{model_name}'
   end
 
   def assert_saved_model(model_name)
-    assert assigns[model_name], "Should have a #{model_name}"
-    assert assigns[model_name].persisted?, "#{model_name} should be persisted"
+    assert assigns[model_name], 'Should have a #{model_name}'
+    assert assigns[model_name].persisted?, '#{model_name} should be persisted'
   end
 end
 
@@ -54,9 +54,9 @@ class ActionDispatch::IntegrationTest
 
   def login(user = users(:one), password = default_password)
     visit login_path
-    fill_in "Email", with: user.email
-    fill_in "Password", with: password
-    click_button "Login"
+    fill_in 'Email', with: user.email
+    fill_in 'Password', with: password
+    click_button 'Login'
   end
 end
 
